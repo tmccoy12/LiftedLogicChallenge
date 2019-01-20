@@ -1,6 +1,8 @@
 # LiftedLogicChallenge
 <h2>Lifted Logic Front-end Challenge</h2>
 
+<a href"https://tmccoy12.github.io/LiftedLogicChallenge/"</a>
+
 <hr />
 
 <h3> Technologies Used </h3>
