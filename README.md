@@ -10,6 +10,7 @@
 <li>HTML5</li>
 <li> CSS3</li>
 <li> Slick Carousel </li>
+<li> Google Map API </li>
 </ol>
 
 <br />
