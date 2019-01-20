@@ -129,7 +129,8 @@
             <div class="carouselNav"></div>
         </section>
         <!--Map Section-->
-        <section id="map">
+        <section>
+                <div id="map"></div>
         </section>
         <!--Contact Section -->
         <section id="contact">
@@ -285,7 +286,86 @@
                         ]
                     });
                 });
-            </script>
+
+            </script> -->
+
+            <script>
+                    function initMap(){
+                      var location = {lat: 38.970640, lng: -94.704290};
+                      var map = new google.maps.Map (document.getElementById("map"),{
+                        zoom: 14,
+                        center: location,
+                        styles: [
+                          
+                          {elementType: 'labels.text.stroke', stylers: [{"visability": "off"}]},
+                          {elementType: 'labels.text.fill', stylers: [{color: '#68C242'}]},
+                          {
+                            featureType: 'road',
+                            elementType: 'geometry',
+                            stylers: [{color: '#FFFFFFF'}]
+                          },
+                          {
+                            featureType: 'road',
+                            elementType: 'geometry.stroke',
+                            stylers: [{color: '#FFFFFF'}]
+                          },
+                          {
+                            featureType: 'road',
+                            elementType: 'labels.text.fill',
+                            stylers: [{color: '#FFFFFF'}]
+                          },
+                          {
+                            featureType: 'poi.business',
+                            elementType: 'labels.text.fill',
+                            stylers: [{'visability': 'off'}]
+                          },
+                          {
+                            featureType: 'poi.business',
+                            elementType: 'geometry',
+                            stylers: [{'visability': 'off'}]
+                          },
+                          {
+                            featureType: 'road.highway',
+                            elementType: 'geometry',
+                            stylers: [{color: '#F6F6F6'}]
+                          },
+                          {
+                            featureType: 'road.highway',
+                            elementType: 'geometry.stroke',
+                            stylers: [{color: '#F6F6F6'}]
+                          },
+                          {
+                            featureType: 'water',
+                            elementType: 'geometry',
+                            stylers: [{color: '#001D5D'}]
+                          },
+                          {
+                            featureType: 'water',
+                            elementType: 'labels.text.fill',
+                            stylers: [{color: '#001D5D'}]
+                          },
+                          {
+                            featureType: 'water',
+                            elementType: 'labels.text.stroke',
+                            stylers: [{color: '#001D5D'}]
+                          }
+                        ]
+                      
+                      });
+                      var marker = new google.maps.Marker({
+                        position: location,
+                        map: map,
+                        icon: {
+                    url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+                  }
+                      });
+                    }
+                  </script>
+                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6iAlsBh8ecVz5VAONioFP0Pl8Atmet5c
+                  &callback=initMap"></script>
+              
+              
+            
 </body>
 
 </html>

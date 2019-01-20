@@ -219,7 +219,7 @@ body{
     clear: both;
     background-color: #F6F6F6;
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
     
   }
   
@@ -257,6 +257,12 @@ body{
   .rel-Info {
     text-align: left;
     padding: 20px;
+  }
+/* map*/
+
+  #map{
+    height: 500px;
+    width: 100%;
   }
   
   /* Contact Section */
