@@ -1,7 +1,7 @@
 # LiftedLogicChallenge
 <h2>Lifted Logic Front-end Challenge</h2>
 
-<a href"https://tmccoy12.github.io/LiftedLogicChallenge/"</a>
+"https://tmccoy12.github.io/LiftedLogicChallenge/"
 
 <hr />
 
