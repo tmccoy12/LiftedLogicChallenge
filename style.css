@@ -770,7 +770,7 @@ and (device-height : 736px) {
  height: 10px;
 }
 nav{
-  padding: 2px;
+  padding: 10px;
 }
 nav a{
   font-size: 8px;
@@ -812,7 +812,7 @@ nav a{
 
 #hero {
   overflow: hidden;
-  height: 400px;
+  height: 375px;
   background-size: cover;
   width: 100%;
   object-fit: contain;
@@ -821,7 +821,7 @@ nav a{
 
 .zoomin-hero {
   
-  height: 400px;
+  height: 375px;
   padding: 1%; 
 }
 
