@@ -443,32 +443,17 @@ display: inline-flex;
 }
 
 
+
 /* Responsive */
 
-@media screen and (max-width: 1024px){/*ipadpro*/
-  .icons {
-    text-align: center;
-    margin-left: 5%;
-    padding-right: 0.5%;
-}
-  #hero h1 {
-    margin-top: -700px;
-    color: white;
-    font-size: 30px;
-  }
-  
-  #hero p {
-    width: 47%;
-    margin: 0;
-    color: #ffffff;
-  }
-}
-
-@media screen and (max-width: 768px) { /*ipad*/
+/*tablets*/
+ @media screen and (max-width: 768px) { 
 
   #wrapper {
-    margin: -1% 0; 
+    margin: 0;
+    padding: 0; 
     }
+    
     img.logo {
       margin-top: 1%;
   }
@@ -487,9 +472,9 @@ display: inline-flex;
 
 #bio img {
   padding: 0 auto;
-}
+} 
 
-#bio h2 {
+ #bio h2 {
   width: 100%;
 }
 
@@ -532,11 +517,21 @@ width: 100%;
   padding: 5px 10px;
   width: 100%;
 }
-}
 
-@media screen and (max-width: 375px) { /*iphone 6/7/8*/
+.footer-2 img {
+  padding: 0 50px 0 0px;
+
+} 
+
+ .foot-main {
+  padding-left: 23px;
+}
+} 
+
+/*ipone galaxy S5*/
+ @media screen and (max-width: 600px) { 
   #wrapper {
-    margin: -2% 0; 
+    margin: 0; 
     }
 
     img.logo {
@@ -568,6 +563,232 @@ nav a{
 
 #hero h1 {
   margin-top: 0px;
+  font-size: 20px;
+}
+
+#hero p {
+  width: 47%;
+  margin: 0;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+#hero {
+  overflow: hidden;
+  height: 400px;
+  background-size: cover;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+} 
+
+.zoomin-hero {
+  
+  height: 100vh;
+  padding: 1%; 
+}
+
+#bio  {
+  flex-direction: column;
+  padding: 10px 20px;
+
+}
+
+#bio img {
+  height: 200px;
+  object-fit: cover;
+  width: 200px;
+}
+
+#bio h2 {
+  width: 100%;
+  font-size: 22px;
+  line-height:30px;
+}
+
+#bio p {
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.Bio-body {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+}
+
+#bio .button {
+  padding: 10px 20px;
+  margin-top: 32px;
+  font-size: 10px;
+}
+
+#releases h2{
+  font-size: 30px;
+}
+
+#releases p {
+  margin: 1%;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+
+#releases h3 {
+  font-size: 20px;
+}
+
+#releases h4{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card{
+  width: 400px;
+}
+.rel-Info {
+  padding: 10px;
+}
+
+#releases{
+  flex-direction: column;
+}
+  
+
+#map{
+  height: 400px;
+  width: 100%;
+}
+
+#contact{
+flex-direction: column;
+}
+
+.inputRow{
+  display:block;
+  font-size: 10px;
+}
+
+#contact input, select, textarea{
+  font-size: 10px;
+}
+
+#contact h2{
+  font-size: 25px;
+}
+
+#contact p {
+  font-size: 12px;
+}
+
+#contact .contact-form {
+  width: 60%;
+  padding-top: 5%;
+  padding-right: 2%;
+  overflow: hidden;
+}
+
+.contactImg {
+  overflow: hidden;
+  width: 50%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+}
+
+.foot-main {
+  padding-left: 10px;
+}
+
+#footer ul{
+  padding: 0;
+}
+#footer {
+  padding: 5px 10px;
+  width: 100%;
+  height: auto;
+}
+
+.header-foot{
+  font-size: 12px;
+  line-height: 18px;
+  padding-top:10px;
+}
+
+#footer li{
+    font-size: 8px;
+    line-height: 10px;
+    list-style-type: none;
+}
+
+.logo2{
+  height: 15px;
+  padding-top: 10px;
+}
+.footer-2 img {
+  padding: 0 1px 0 10px;
+  float: right;
+  height: 8px;
+}
+
+.footer-2 h4 {
+  font-size: 7px;
+  margin-top: -8px;
+}
+
+.footer-2  {
+  margin-right: 10px;
+}
+
+#footer {
+  background-color:#001D5D;
+  color: #FFFFFF;
+  padding: 0;
+  width: 100%;
+}  
+ } 
+
+ /*iphone plus*/
+@media only screen  
+and (device-width : 414px) 
+and (device-height : 736px) {
+
+  #wrapper {
+    margin: 0; 
+    }
+
+    img.logo {
+      margin-top: 2%;
+  }
+
+.icons {
+  text-align: center;
+  margin-left: 2px;
+ height: 10px;
+}
+nav a{
+  font-size: 8px;
+}
+.button {
+  padding: 1px 10px 1px 10px;
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 0ch;
+    line-height: 18px;
+    margin-left: .5%;
+    margin-bottom: .5%;
+}
+#hero p {
+  width: 60% !important;
+  font-size: 10px;
+  margin-top: -15px;
+}
+
+#hero h1 {
+  margin-top: -100px;
   font-size: 20px;
 }
 
@@ -695,6 +916,12 @@ flex-direction: column;
 }
 
 .contactImg {
+  overflow: hidden;
+  width: 50%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0;
+  padding: 0;
   height: 300px;
 }
 #footer ul{
@@ -733,6 +960,10 @@ flex-direction: column;
   margin-top: -8px;
 }
 
+.footer-2  {
+  margin-right: 10px;
+}
+
 #footer {
   background-color:#001D5D;
   color: #FFFFFF;
@@ -740,13 +971,3 @@ flex-direction: column;
   width: 100%;
 } 
 }
-@media screen and (max-width: 360px) { /*galaxy S5*/
-
-
-  #releases p {
-    margin: 1%;
-    font-size: 10px;
-    line-height: 18px;
-}
-}
-
