@@ -766,8 +766,11 @@ and (device-height : 736px) {
 
 .icons {
   text-align: center;
-  margin-left: 2px;
+  margin-left: 8px;
  height: 10px;
+}
+nav{
+  padding: 2px;
 }
 nav a{
   font-size: 8px;
@@ -781,6 +784,14 @@ nav a{
     margin-left: .5%;
     margin-bottom: .5%;
 }
+
+.herotext {
+  position: relative;
+  top: -200px;
+  color: #FFFFFF;
+  padding: 5%;
+}
+
 #hero p {
   width: 60% !important;
   font-size: 10px;
@@ -810,7 +821,7 @@ nav a{
 
 .zoomin-hero {
   
-  height: 100vh;
+  height: 400px;
   padding: 1%; 
 }
 
